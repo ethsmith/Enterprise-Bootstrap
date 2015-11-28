@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Enterprise Bootstrap CMS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--link href="assets/css/jquery-ui.css" rel="stylesheet"-->
+        <!--link href="assets/css/bootstrap.css" rel="stylesheet"-->
+        <link href="assets/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="assets/css/layoutit.css" rel="stylesheet">
+        <!--link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet"-->
+        <script src="assets/js/lib/jquery-2.0.0.min.js"></script>
+        <script src="assets/js/lib/blob.js"></script>
+        <script src="assets/js/lib/jquery-ui.js"></script>
+        <script src="assets/js/lib/FileSaver.js"></script>
+        <script src="assets/js/lib/jquery.ui.touch-punch.min.js"></script>
+        <script src="assets/js/lib/bootstrap-tooltip.js"></script>
+        <script src="assets/js/lib/bootstrap-popover.js"></script>
+        <script src="assets/js/lib/bootstrap-modal.js"></script>
+        <script src="assets/js/lib/bootstrap-transition.js"></script>
+        <script src="assets/js/main.js"></script>
+        <style>
+            body .modal {
+                /* new custom width */
+                width: 1100px;
+                /* must be half of the width, minus scrollbar on the left (30px) */
+                margin-left: -550px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="nav-collapse collapse">
+                        <a href="#" class="brand">Enterprise Bootstrap Website Builder</a>
+                        <div class="btn-group">
+                            <button href="#myModal" type="button" class="btn btn-success" data-toggle="modal" id="preview-html"><i class="icon-eye-open icon-white"></i>Preview</button>
+                            <button type="button" class="btn btn-success" id="download-html"><i class="icon-download icon-white"></i>Download</button>
+                        </div>
+                    </div>
+                    <!--/.nav-collapse --> 
+                </div>
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="container-fluid"><h1>Drag And Drop Elements To Create The UI</h1>
+            <h1 class="fa fa-desktop"> Looks Good On Desktop</h1>
+            <h1 class="fa fa-laptop"> Looks Good On Laptop</h1>
+            <h1 class="fa fa-mobile"> Looks Good On Mobile</h1>
+            <br>
+            <h3>TODO:</h3>
+            <ul>
+                <li>More</li>
+                <li>and</li>
+                <li>More</li>
+            <ul>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid top-container">
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Preview</h3>
+            </div>
+            <div id="modal-body" class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </body>
+</html>
